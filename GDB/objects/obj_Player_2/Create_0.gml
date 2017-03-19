@@ -1,5 +1,4 @@
 /// @description Insert description here
-globalvar wall_instance;
-globalvar trampoline_instance;
+globalvar helpobject_instance;
 
-wall_instance = noone;
+helpobject_instance = noone;

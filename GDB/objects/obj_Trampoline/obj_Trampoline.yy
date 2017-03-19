@@ -1,8 +1,8 @@
 {
-    "id": "3d700de7-19aa-4184-9a6a-84867a5504a1",
+    "id": "b2272678-d02a-4671-b6cd-d71a03fa5754",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_Wall",
+    "name": "obj_Trampoline",
     "eventList": [
         
     ],
@@ -21,7 +21,7 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "solid": true,
-    "spriteId": "cff71515-6758-47c8-8f2d-142b2eaa0d87",
+    "solid": false,
+    "spriteId": "eda0536d-1275-41c3-b3c0-286f9045cd71",
     "visible": true
 }

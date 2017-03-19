@@ -9,15 +9,20 @@ move = key_left + key_right;
 hsp = move * movespeed;
 if (vsp < 10) vsp += grav;
 
-if (place_meeting(x, y+1, obj_Wall))
+if (place_meeting(x, y+1, obj_Surface))
 {
 	vsp = key_jump * -jumpspeed;
 }
 
-//Horizontal collision
-if (place_meeting(x+hsp, y, obj_Wall))
+if (place_meeting(x, y+1, obj_Trampoline))
 {
-	while(!place_meeting(x+sign(hsp), y, obj_Wall))
+	vsp = -jumpspeed * 2;
+}
+
+//Horizontal collision
+if (place_meeting(x+hsp, y, obj_Surface))
+{
+	while(!place_meeting(x+sign(hsp), y, obj_Surface))
 	{
 		x += sign(hsp);
 	}
@@ -26,14 +31,15 @@ if (place_meeting(x+hsp, y, obj_Wall))
 
 x += hsp;
 
+
 //vertical collision
-if (place_meeting(x, y+vsp, obj_Wall))
+if (place_meeting(x, y+vsp, obj_Surface))
 {
-	while(!place_meeting(x, y+sign(vsp), obj_Wall))
-	{
-		y += sign(vsp);
-	}
-	vsp = 0;
+		while(!place_meeting(x, y+sign(vsp), obj_Surface))
+		{
+			y += sign(vsp);
+		}
+		vsp = 0;
 }
 
 y += vsp;

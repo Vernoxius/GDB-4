@@ -3,7 +3,7 @@ mouse_press = mouse_check_button_pressed(mb_left);
 
 if(mouse_press == 1)
 {
-	if(wall_instance != null)
+	if(wall_instance != noone)
 	{
 		with(wall_instance)
 		{

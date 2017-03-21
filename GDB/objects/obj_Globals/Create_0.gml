@@ -1,0 +1,1 @@
+global.room_index = 1;

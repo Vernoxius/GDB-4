@@ -19,6 +19,12 @@ if (place_meeting(x, y+1, obj_Trampoline))
 	vsp = -jumpspeed * 2;
 }
 
+if (place_meeting(x+1, y, obj_Next))
+{
+	global.room_index++;
+	room_goto_next();;
+}
+
 //Horizontal collision
 if (place_meeting(x+hsp, y, obj_Surface))
 {

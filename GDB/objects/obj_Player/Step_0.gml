@@ -14,9 +14,23 @@ if (place_meeting(x, y+1, obj_Surface))
 	vsp = key_jump * -jumpspeed;
 }
 
-if (place_meeting(x, y+1, obj_Trampoline))
+if (place_meeting(x, y+1, obj_Trampoline) && global.has_trampoline == true)
 {
-	vsp = -jumpspeed * 2;
+	vsp = -jumpspeed * 1.5;
+}
+
+if (place_meeting(x, y+1, obj_Trampoline) && global.has_trampoline == false)
+{
+	global.has_trampoline = true;
+	instance_destroy(obj_Trampoline);
+	
+}
+
+if (place_meeting(x, y+1, obj_Spike))
+{
+	obj_Player.x = start_pos_x;
+	obj_Player.y = start_pos_y;
+	global.second_text = true;
 }
 
 if (place_meeting(x+1, y, obj_Next))

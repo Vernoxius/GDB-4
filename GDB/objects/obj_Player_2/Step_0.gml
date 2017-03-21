@@ -16,7 +16,7 @@ if(mouse_press == 1 || mouse_press_right == 1)
 	{
 		helpobject_instance = instance_create_layer(mouse_x, mouse_y, "Instances", obj_Wall);
 	}
-	else if (mouse_press_right == 1)
+	else if (mouse_press_right == 1 && global.has_trampoline > 3)
 	{
 		helpobject_instance = instance_create_layer(mouse_x, mouse_y, "Instances", obj_Trampoline);
 	}

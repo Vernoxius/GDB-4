@@ -16,7 +16,18 @@ switch(global.room_index)
 		break;
 	case(3):
 		draw_text(drx, dry, "Even when my world became bigger I climbed upwards into the unknown...");
+		break;
 	case(4):
+	if (global.second_text == false)
+	{
 		draw_text(drx, dry, "But it seems there are things you cannot do alone.");
+	}
+	else
+	{
+		draw_text_ext(drx, dry, "Sometimes asking for help doesn't make us weaker, but stronger. Try asking someone to use the left mouse button", 3, 250);
+	}
+		break;
+	case(5):
+	draw_text_ext(drx, dry, "Togheter people are stronger, your friend helped you. Will you grab something that helps him?", 3, 250);
 	
 }

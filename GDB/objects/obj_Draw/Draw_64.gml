@@ -24,7 +24,7 @@ switch(global.room_index)
 	}
 	else
 	{
-		draw_text_ext(drx, dry, "Sometimes asking for help doesn't make us weaker, but stronger. Try asking someone to use the left mouse button", 3, 250);
+		draw_text(drx, dry, "Sometimes asking for help doesn't make us weaker, Try asking someone to use the left mouse button.")
 	}
 		break;
 	case(5):

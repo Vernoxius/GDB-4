@@ -1,8 +1,20 @@
-p2_right = keyboard_check(vk_right);
-p2_left = -keyboard_check(vk_left);
-p2_up = -keyboard_check(vk_up);
-p2_down = keyboard_check(vk_down);
-p2_place = keyboard_check(vk_enter);
+//DEFAULT CONTROLS
+if(global.default_controls)
+{
+	p2_right = keyboard_check(vk_right);
+	p2_left = -keyboard_check(vk_left);
+	p2_up = -keyboard_check(vk_up);
+	p2_down = keyboard_check(vk_down);
+	p2_place = keyboard_check(vk_enter);
+}
+else
+{
+	p2_right = keyboard_check(ord("D"));
+	p2_left = -keyboard_check(ord("A"))
+	p2_up = -keyboard_check(ord("W"));
+	p2_down = keyboard_check(ord("S"));
+	p2_place = keyboard_check(vk_space);
+}
 
 p2_move_h = p2_right + p2_left;
 p2_move_v = p2_up + p2_down;

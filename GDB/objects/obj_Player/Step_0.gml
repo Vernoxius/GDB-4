@@ -1,17 +1,36 @@
 /// Player_Input
 //Get player input
-key_right = keyboard_check(ord("D"));
-key_left = -keyboard_check(ord("A"));
-key_jump = keyboard_check_pressed(vk_space);
+if(global.default_controls)
+{
+	p1_right = keyboard_check(ord("D"));
+	p1_left = -keyboard_check(ord("A"))
+	p1_up = -keyboard_check(ord("W"));
+	p1_down = keyboard_check(ord("S"));
+	p1_jump = keyboard_check_pressed(vk_space);
+}
+else
+{
+	p1_right = keyboard_check(vk_right);
+	p1_left = -keyboard_check(vk_left);
+	p1_up = -keyboard_check(vk_up);
+	p1_down = keyboard_check(vk_down);
+	p1_jump = keyboard_check_pressed(vk_enter);
+}
 
 //react to input
-move = key_left + key_right;
+move = p1_left + p1_right;
 hsp = move * movespeed;
 if (vsp < 10) vsp += grav;
 
 if (place_meeting(x, y+1, obj_Surface))
 {
-	vsp = key_jump * -jumpspeed;
+	jumps = global.max_jumps;
+}
+
+if ((p1_jump) && (jumps > 0))
+{
+	jumps = jumps - 1;
+	vsp = -jumpspeed;
 }
 
 if (place_meeting(x, y+1, obj_Trampoline) && global.has_trampoline == true)
@@ -30,7 +49,15 @@ if (place_meeting(x, y+1, obj_Spike))
 {
 	obj_Player.x = start_pos_x;
 	obj_Player.y = start_pos_y;
-	global.second_text = true;
+	
+	if(global.default_controls)
+	{
+		global.default_controls = false;
+	}
+	else
+	{
+		global.default_controls = true;
+	}
 }
 
 if (place_meeting(x+1, y, obj_Next))

@@ -18,3 +18,18 @@ if((tileX1 + p2_move_h > -1) &&
 	tileY2 += p2_move_v * tileHeight;
 }
 
+if(p2_place = 1)
+{
+	if(spawnedobject_instance != noone)
+	{
+		with(spawnedobject_instance)
+		{
+			instance_destroy();
+		}
+	}
+	
+	spawnedobject_instance = 
+	instance_create_layer(((tileX1 + tileX2)/2), ((tileY1 + tileY2)/2),
+	"Instances", obj_Wall);
+}
+

@@ -12,11 +12,12 @@
         "0401b46f-5be9-4a20-b636-7166413f0598",
         "6808d8c2-3cdd-496b-9191-0e67b23c7724",
         "dd25628f-7163-45d5-a76c-799042b136a7",
-        "9b55f7e9-785a-4749-bbba-2c9e17b7eba5",
         "16ee61d1-fe44-4b1a-9e5d-d47c1aa13bd1",
         "30caca42-4238-444b-8b65-df48b7b08e74",
         "d057fdff-d37e-4376-a6fe-8f8f0467c4ea",
-        "1e1499d7-ceee-4ccb-9155-d758823bedd2"
+        "1e1499d7-ceee-4ccb-9155-d758823bedd2",
+        "b91f32ba-ec6f-43d0-91f0-3d4c6a32f581",
+        "0286db77-833b-49e2-aa79-44f84111073c"
     ],
     "layers": [
         {
@@ -110,30 +111,6 @@
                     "inheritCode": false,
                     "name_with_no_file_rename": "inst_6CA4BD3F",
                     "objId": "d0c93577-8ee4-452e-b7dc-c258f420457a",
-                    "rotation": 0,
-                    "scaleX": 1,
-                    "scaleY": 1
-                },
-                {
-                    "id": "9b55f7e9-785a-4749-bbba-2c9e17b7eba5",
-                    "modelName": "GMRInstance",
-                    "mvc": "1.0",
-                    "ignore": false,
-                    "inheritItemSettings": false,
-                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
-                    "m_serialiseFrozen": false,
-                    "name": "inst_143480A2",
-                    "x": 992,
-                    "y": 480,
-                    "IsDnD": false,
-                    "colour": {
-                        "Value": 4294967295
-                    },
-                    "creationCodeFile": "",
-                    "creationCodeType": "",
-                    "inheritCode": false,
-                    "name_with_no_file_rename": "inst_143480A2",
-                    "objId": "ca003a5e-0f1d-4139-9dcc-5afda9c32532",
                     "rotation": 0,
                     "scaleX": 1,
                     "scaleY": 1
@@ -233,6 +210,54 @@
                     "rotation": 0,
                     "scaleX": 16.5,
                     "scaleY": 1
+                },
+                {
+                    "id": "b91f32ba-ec6f-43d0-91f0-3d4c6a32f581",
+                    "modelName": "GMRInstance",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "inst_34D1678D",
+                    "x": 992,
+                    "y": 416,
+                    "IsDnD": false,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "creationCodeFile": "",
+                    "creationCodeType": "",
+                    "inheritCode": false,
+                    "name_with_no_file_rename": "inst_34D1678D",
+                    "objId": "d9f71312-25eb-4ff9-97a0-46e6f7b83f9b",
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 1
+                },
+                {
+                    "id": "0286db77-833b-49e2-aa79-44f84111073c",
+                    "modelName": "GMRInstance",
+                    "mvc": "1.0",
+                    "ignore": false,
+                    "inheritItemSettings": false,
+                    "m_originalParentID": "00000000-0000-0000-0000-000000000000",
+                    "m_serialiseFrozen": false,
+                    "name": "inst_D8BBC00",
+                    "x": 992,
+                    "y": 384,
+                    "IsDnD": false,
+                    "colour": {
+                        "Value": 4294967295
+                    },
+                    "creationCodeFile": "",
+                    "creationCodeType": "",
+                    "inheritCode": false,
+                    "name_with_no_file_rename": "inst_D8BBC00",
+                    "objId": "69843042-e72f-4577-bd1c-399cd756539f",
+                    "rotation": 0,
+                    "scaleX": 1,
+                    "scaleY": 1
                 }
             ]
         },
@@ -261,7 +286,7 @@
             "animationFPS": 15,
             "animationSpeedType": 0,
             "colour": {
-                "Value": 4278190080
+                "Value": 4292072215
             },
             "hspeed": 0,
             "htiled": false,

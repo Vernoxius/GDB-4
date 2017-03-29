@@ -50,7 +50,7 @@
             "Key": "0bd100ef-e2d5-4932-bbd4-261ab145ca28",
             "Value": {
                 "id": "fa04cb90-dfa0-4308-9096-c3a65c944972",
-                "resourcePath": "rooms\\room_1\\room_1.yy",
+                "resourcePath": "rooms\\Basic_Movement\\Basic_Movement.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -103,14 +103,6 @@
             }
         },
         {
-            "Key": "336a02ff-13b4-4e1a-9ef4-c841090ee9dc",
-            "Value": {
-                "id": "ab172be4-2a9c-4974-9eef-df2857e7b02e",
-                "resourcePath": "rooms\\room_3\\room_3.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "3d700de7-19aa-4184-9a6a-84867a5504a1",
             "Value": {
                 "id": "e0f02aa7-de68-4827-977f-9c7759249d95",
@@ -130,7 +122,7 @@
             "Key": "4221b3f1-8413-4d15-8489-d90e7c483d59",
             "Value": {
                 "id": "e72b5a6a-8c87-4682-ae04-3b7882059c34",
-                "resourcePath": "rooms\\room_4\\room_4.yy",
+                "resourcePath": "rooms\\room_3\\room_3.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -202,7 +194,7 @@
             "Key": "93b2d546-12f0-40ab-9fe6-d32329283b58",
             "Value": {
                 "id": "51960ca5-f2f9-442e-ae43-52fb74dae17d",
-                "resourcePath": "rooms\\room_5\\room_5.yy",
+                "resourcePath": "rooms\\room_4\\room_4.yy",
                 "resourceType": "GMRoom"
             }
         },

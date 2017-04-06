@@ -1,5 +1,5 @@
 //DEFAULT CONTROLS
-if(global.default_controls)
+if (global.default_controls)
 {
 	p2_right = keyboard_check(vk_right);
 	p2_left = -keyboard_check(vk_left);
